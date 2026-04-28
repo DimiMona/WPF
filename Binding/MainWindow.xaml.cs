@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,6 +30,7 @@ namespace Binding
 			{
 				boundText = value;
 				OnPropertyChanged();
+				//OnPropertyChanged(nameof(BoundText));
 			}
 		}
 		public MainWindow()
@@ -38,9 +40,9 @@ namespace Binding
 			txtInput.Focus();
 		}
 		public event PropertyChangedEventHandler PropertyChanged;
-		void OnPropertyChanged()
+		void OnPropertyChanged([CallerMemberName]string propertyName = null)
 		{
-			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("BoundText"));
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 
 		private void BtnDefault_Click(object sender, RoutedEventArgs e)
