@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="CustomTextBoxControl.View.UserControls.ClearableTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomTextBoxControl.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="40" d:DesignWidth="250">
+	<Grid>
+		<TextBox Name="txtInput"
+				 Background="Transparent"
+				 TextChanged="txtInput_TextChanged"
+				 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+				 />
+		<TextBlock Name ="tbPlaceholder" Text=" Placeholder"
+				   FontWeight="Light" Foreground="DarkGray"
+				   HorizontalAlignment="Center" VerticalAlignment="Center"
+				   Panel.ZIndex="-1"
+				   />
+		<Button	   Name="btnClear" 
+				   Width="40" Height="40"
+				   HorizontalAlignment="Right"
+				   Content="X" FontSize="24"
+				   Background="Transparent" Foreground="DarkGray"
+				   BorderThickness="0"
+				   Click="btnClear_Click" 
+				   />
+	</Grid>
+</UserControl>
