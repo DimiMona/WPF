@@ -20,7 +20,7 @@
 		<CustomTextBoxControl:ClearableTextBox Grid.Row="0" Width="250" Height="40" Placeholder ="Фамилия" />
 		<CustomTextBoxControl:ClearableTextBox Grid.Row="1" Width="250" Height="40" Placeholder ="Имя" />
 		<CustomTextBoxControl:ClearableTextBox Grid.Row="2" Width="250" Height="40" Placeholder ="Отчество" />
-		<CustomTextBoxControl:ClearableTextBox Grid.Row="3" Width="250" Height="40" Placeholder ="Дата рждение"/>
+		<CustomTextBoxControl:ClearableTextBox Grid.Row="3" Width="250" Height="40" Placeholder ="Дата рождения"/>
 		<CustomTextBoxControl:ClearableTextBox Grid.Row="4" Width="250" Height="40" Placeholder ="E-mail"/>
 		<CustomTextBoxControl:ClearableTextBox Grid.Row="5" Width="250" Height="40" Placeholder ="Телефон"/>
 	</Grid>
