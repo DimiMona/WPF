@@ -22,7 +22,8 @@
 				   HorizontalAlignment="Right"
 				   Content="X" FontSize="24"
 				   Background="Transparent" Foreground="DarkGray"
-				   BorderThickness="0"
+				   BorderThickness="0" 
+				   IsTabStop="False"
 				   Click="btnClear_Click" 
 				   />
 	</Grid>
